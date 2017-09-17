@@ -1,0 +1,39 @@
+def editHead():
+    print("you are editing the head of the ting")
+    headShape = input("what is your head shape?")
+    headSize = input("what size is your head?")
+    hairColor = input("what color is your hair?")
+    headFinal = ("You have a " + headSize + " " + headShape + " head with "+ hairColor+ " color hair. ")
+    editAvatar()
+
+def editBody():
+    print("you are editing the body of the ting")
+    bodyShape = input("what is your body shape?")
+    bodySize = input("what size is your body?")
+    shirtColor = input("what color is your shirt?")
+    bodyFinal = ("You have a " + bodySize + " " + bodyShape + " head with a "+ shirtColor+ " shirt. ")
+    editAvatar()
+
+def editLegs():
+    print("you are editing the legs of the ting")
+    legSize = input("what size are your legs?")
+    legShape = input("what are your legs' shape?")
+    pantColor = input("what color are your pants?")
+    shoesColor = input("what color are your shoes?")
+    legsFinal = ("You have " + legSize + " " + legShape + " legs with "+ pantColor+ " Pants "+"and "+shoesColor+"shoes. ")
+    editAvatar()
+
+def editAvatar():
+    chooseEdits = int(input("push corresponding number to edit that part of the avater 1.head 2.body 3.legs."))
+
+    if chooseEdits == 1:
+        editHead()
+
+    elif chooseEdits == 2:
+        editBody()
+
+    elif chooseEdits == 3:
+        editLegs()
+
+print("Welcome to an avatar creator")
+editAvatar()
